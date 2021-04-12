@@ -172,7 +172,7 @@ function loadImages(){
             theFiles:[
                 {
                     type: PLAYER_IMG_IDLE_LEFT,
-                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_idle_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_idle_facing_left.png",
                     frames: 20,
                     framesX: 4,
                     framesY: 5,
