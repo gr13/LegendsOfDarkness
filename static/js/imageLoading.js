@@ -172,7 +172,7 @@ function loadImages(){
             theFiles:[
                 {
                     type: PLAYER_IMG_IDLE_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_idle_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/blonde_viking_girl_idle_facing_left.png",
                     frames: 20,
                     framesX: 4,
                     framesY: 5,
@@ -185,7 +185,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_IDLE_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_idle_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_idle_facing_right.png",
                     frames: 20,
                     framesX: 4,
                     framesY: 5,
@@ -198,7 +198,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DIE_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_die_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_die_facing_left.png",
                     frames: 5,
                     framesX: 1,
                     framesY: 5,
@@ -211,7 +211,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DIE_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_die_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_die_facing_right.png",
                     frames: 5,
                     framesX: 1,
                     framesY: 5,
@@ -224,7 +224,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_WALK_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_walk_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_walk_facing_left.png",
                     frames: 15,
                     framesX: 3,
                     framesY: 5,
@@ -237,7 +237,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_WALK_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_walk_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_walk_facing_right.png",
                     frames: 15,
                     framesX: 3,
                     framesY: 5,
@@ -250,7 +250,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_RUN_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_run_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_run_facing_left.png",
                     frames: 15,
                     framesX: 3,
                     framesY: 5,
@@ -263,7 +263,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_RUN_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_run_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_run_facing_right.png",
                     frames: 15,
                     framesX: 3,
                     framesY: 5,
@@ -276,7 +276,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_JUMP_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_jump_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_jump_facing_left.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -289,7 +289,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_JUMP_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_jump_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_jump_facing_right.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -302,7 +302,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DEFEND_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_defend_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_defend_facing_left.png",
                     frames: 5,
                     framesX: 1,
                     framesY: 5,
@@ -315,7 +315,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DEFEND_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_defend_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_defend_facing_right.png",
                     frames: 5,
                     framesX: 1,
                     framesY: 5,
@@ -328,15 +328,15 @@ function loadImages(){
                 },
                 // {
                 //     type: PLAYER_IMG_DEFEND1_LEFT,
-                //     theFile: "sprites/players./viking_girl_blond/.png",
+                //     theFile: "sprites/players/viking_girl_blond/.png",
                 // },
                 // {
                 //     type: PLAYER_IMG_DEFENT1_RIGHT,
-                //     theFile: "sprites/players./viking_girl_blond/.png",
+                //     theFile: "sprites/players/viking_girl_blond/.png",
                 // },
                 {
                     type: PLAYER_IMG_ATTACK_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_attack_1_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_attack_1_facing_left.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -349,7 +349,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_ATTACK_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_attack_1_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_attack_1_facing_right.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -362,7 +362,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_ATTACK1_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_attack_1_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_attack_1_facing_left.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -375,7 +375,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_ATTACK1_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_girl_blond/__blonde_viking_girl_attack_1_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_blond/__blonde_viking_girl_attack_1_facing_right.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -394,7 +394,7 @@ function loadImages(){
             theFiles:[
                 {
                     type: PLAYER_IMG_IDLE_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_idle_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_idle_facing_left.png",
                     frames: 20,
                     framesX: 4,
                     framesY: 5,
@@ -407,7 +407,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_IDLE_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_idle_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_idle_facing_right.png",
                     frames: 20,
                     framesX: 4,
                     framesY: 5,
@@ -420,7 +420,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DIE_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_die_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_die_facing_left.png",
                     frames: 5,
                     framesX: 1,
                     framesY: 5,
@@ -433,7 +433,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DIE_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_die_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_die_facing_right.png",
                     frames: 5,
                     framesX: 1,
                     framesY: 5,
@@ -446,7 +446,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_WALK_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_walk_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_walk_facing_left.png",
                     frames: 15,
                     framesX: 3,
                     framesY: 5,
@@ -459,7 +459,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_WALK_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_walk_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_walk_facing_right.png",
                     frames: 15,
                     framesX: 3,
                     framesY: 5,
@@ -472,7 +472,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_RUN_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_run_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_run_facing_left.png",
                     frames: 15,
                     framesX: 3,
                     framesY: 5,
@@ -485,7 +485,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_RUN_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_run_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_run_facing_right.png",
                     frames: 15,
                     framesX: 3,
                     framesY: 5,
@@ -498,7 +498,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_JUMP_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_jump_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_jump_facing_left.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -511,7 +511,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_JUMP_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_jump_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_jump_facing_right.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -524,7 +524,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DEFEND_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_defend_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_defend_facing_left.png",
                     frames: 5,
                     framesX: 1,
                     framesY: 5,
@@ -537,7 +537,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DEFEND_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_defend_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_defend_facing_right.png",
                     frames: 5,
                     framesX: 1,
                     framesY: 5,
@@ -550,15 +550,15 @@ function loadImages(){
                 },
                 // {
                 //     type: PLAYER_IMG_DEFEND1_LEFT,
-                //     theFile: "sprites/players./viking_boy_blond/.png",
+                //     theFile: "sprites/players/viking_boy_blond/.png",
                 // },
                 // {
                 //     type: PLAYER_IMG_DEFENT1_RIGHT,
-                //     theFile: "sprites/players./viking_boy_blond/.png",
+                //     theFile: "sprites/players/viking_boy_blond/.png",
                 // },
                 {
                     type: PLAYER_IMG_ATTACK_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_attack_1_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_attack_1_facing_left.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -571,7 +571,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_ATTACK_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_attack_1_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_attack_1_facing_right.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -584,7 +584,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_ATTACK1_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_attack_2_facing_left.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_attack_2_facing_left.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -597,7 +597,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_ATTACK1_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./viking_boy_blond/__blonde_viking_boy_attack_2_facing_right.png",
+                    theFile: PLAYER_IMG_PATH + "/viking_boy_blond/__blonde_viking_boy_attack_2_facing_right.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -616,7 +616,7 @@ function loadImages(){
             theFiles:[
                 {
                     type: PLAYER_IMG_IDLE_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_rest_left.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_rest_left.png",
                     frames: 8,
                     framesX: 2,
                     framesY: 4,
@@ -630,7 +630,7 @@ function loadImages(){
 
                 {
                     type: PLAYER_IMG_IDLE_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_rest_right.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_rest_right.png",
                     frames: 8,
                     framesX: 2,
                     framesY: 4,
@@ -643,7 +643,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DIE_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_die_left.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_die_left.png",
                     frames: 16,
                     framesX: 4,
                     framesY: 4,
@@ -656,7 +656,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DIE_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_die_right.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_die_right.png",
                     frames: 16,
                     framesX: 4,
                     framesY: 4,
@@ -669,7 +669,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_WALK_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_walk_left.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_walk_left.png",
                     frames: 16,
                     framesX: 4,
                     framesY: 4,
@@ -682,7 +682,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_WALK_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_walk_right.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_walk_right.png",
                     frames: 16,
                     framesX: 4,
                     framesY: 4,
@@ -695,7 +695,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_RUN_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_run_left.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_run_left.png",
                     frames: 16,
                     framesX: 4,
                     framesY: 4,
@@ -708,7 +708,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_RUN_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_run_right.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_run_right.png",
                     frames: 16,
                     framesX: 4,
                     framesY: 4,
@@ -721,7 +721,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_JUMP_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_jump_left.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_jump_left.png",
                     frames: 16,
                     framesX: 4,
                     framesY: 4,
@@ -734,7 +734,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_JUMP_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_jump_right.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_jump_right.png",
                     frames: 16,
                     framesX: 4,
                     framesY: 4,
@@ -747,7 +747,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DEFEND_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_slash_left.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_slash_left.png",
                     frames: 12,
                     framesX: 3,
                     framesY: 4,
@@ -760,7 +760,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_DEFEND_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_slash_right.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_slash_right.png",
                     frames: 12,
                     framesX: 3,
                     framesY: 4,
@@ -773,7 +773,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_ATTACK_LEFT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_slash_left.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_slash_left.png",
                     frames: 12,
                     framesX: 3,
                     framesY: 4,
@@ -786,7 +786,7 @@ function loadImages(){
                 },
                 {
                     type: PLAYER_IMG_ATTACK_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "./knight/knight_slash_right.png",
+                    theFile: PLAYER_IMG_PATH + "/knight/knight_slash_right.png",
                     frames: 12,
                     framesX: 3,
                     framesY: 4,
