@@ -1,9 +1,9 @@
 class mapClass{
     PLACE_W = 20;
     PLACE_H = 20;
-    #PLACE_COLS = 51;
-    #PLACE_ROWS = 38;
-    #mapOne = [
+    _PLACE_COLS = 51;
+    _PLACE_ROWS = 38;
+    _mapOne = [
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -43,21 +43,21 @@ class mapClass{
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
         0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     ];
-    #mapTwo = [];
-    #mapList = [this.#mapOne, this.#mapTwo];
-    #mapNow = 0;
-    #LOCATION_FORT = 0;
-    #LOCATION_PALACE = 1;
-    #LOCATION_TOWN = 2;
-    #LOCATION_VILLAGE = 3;
+    _mapTwo = [];
+    _mapList = [this._mapOne, this._mapTwo];
+    _mapNow = 0;
+    _LOCATION_FORT = 0;
+    _LOCATION_PALACE = 1;
+    _LOCATION_TOWN = 2;
+    _LOCATION_VILLAGE = 3;
 
-    #infoWindow; // class showing info windows
+    _infoWindow; // class showing info windows
 
     constructor(options){
         // Levels might be be size etc.
-        this.#mapNow = options.levelStart;
-        console.log("levelOne", this.#mapList[this.#mapNow].length);
-        this.#infoWindow = new mapInfoWindow();
+        this._mapNow = options.levelStart;
+        console.log("levelOne", this._mapList[this._mapNow].length);
+        this._infoWindow = new mapInfoWindow();
     }
 
     draw(){
@@ -65,7 +65,7 @@ class mapClass{
     }
 
     rowColToArrayIndex(col, row){
-        return this.#PLACE_COLS * row + col;
+        return this._PLACE_COLS * row + col;
     }
 
 

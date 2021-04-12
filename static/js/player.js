@@ -9,24 +9,24 @@ const PLAYER_ATTACK = 6;
 const PLAYER_ATTACK1 = 7;
 const PLAYER_DIE = 8;
 class Player {
-    #playerImages;
-    #x = 0;
-    #y = 0;
-    #location;
-    #frame = 0;
-    #frameX = 0;
-    #frameY = 0;
-    #status = PLAYER_IDLE;
+    _playerImages;
+    _x = 0;
+    _y = 0;
+    _location;
+    _frame = 0;
+    _frameX = 0;
+    _frameY = 0;
+    _status = PLAYER_IDLE;
 
     constructor(options){
-        this.#playerImages = options.playerImages;
+        this._playerImages = options.playerImages;
     }
 
     getPlayerImages(){
-        return this.#playerImages;
+        return this._playerImages;
     }
 
     setPlayerImages(img){
-        this.#playerImages = img.playerImages;
+        this._playerImages = img.playerImages;
     }
 }
