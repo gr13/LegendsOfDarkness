@@ -54,18 +54,19 @@ const ARROW_DOWN = 2;
 const ARROW_LEFT = 3;
 
 
-const VIKING_GIRL_SPRITE_WIDTH = 734;
-const VIKING_GIRL_SPRITE_HEIGHT = 553;
+const VIKING_GIRL_SPRITE_WIDTH = 291;
+const VIKING_GIRL_SPRITE_HEIGHT = 219.25;
 const VIKING_GIRL_SPRITE_X_UPD = 30;
 const VIKING_GIRL_SPRITE_Y_UPD = 70;
 const VIKING_GIRL_SPRITE_MULTIPLIER = 0.1;
 
-const VIKING_BOY_SPRITE_WIDTH = 703;
-const VIKING_BOY_SPRITE_HEIGHT = 547;
+const VIKING_BOY_SPRITE_WIDTH = 291;
+const VIKING_BOY_SPRITE_HEIGHT = 226.5;
 const VIKING_BOY_SPRITE_X_UPD = 30;
 const VIKING_BOY_SPRITE_Y_UPD = 70;
 const VIKING_BOY_SPRITE_MULTIPLIER = 0.1;
 
+const KNIGHT_SPRITE_WIDTH = 291;
 const KNIGHT_SPRITE_X_UPD = 30;
 const KNIGHT_SPRITE_Y_UPD = 70;
 const KNIGHT_SPRITE_MULTIPLIER = 0.1;
@@ -326,14 +327,6 @@ function loadImages(){
                     spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
                     spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
                 },
-                // {
-                //     type: PLAYER_IMG_DEFEND1_LEFT,
-                //     theFile: "sprites/players/viking_girl_blond/.png",
-                // },
-                // {
-                //     type: PLAYER_IMG_DEFENT1_RIGHT,
-                //     theFile: "sprites/players/viking_girl_blond/.png",
-                // },
                 {
                     type: PLAYER_IMG_ATTACK_LEFT,
                     theFile: PLAYER_IMG_PATH + "/viking_girl_blond/blonde_viking_girl_attack_1_facing_left.png",
@@ -376,6 +369,434 @@ function loadImages(){
                 {
                     type: PLAYER_IMG_ATTACK1_RIGHT,
                     theFile: PLAYER_IMG_PATH + "/viking_girl_blond/blonde_viking_girl_attack_1_facing_right.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                }
+            ]
+        },
+        {
+            type: SPRITE_PLAYER,
+            title: 'Brown Viking Girl',
+            theFiles:[
+                {
+                    type: PLAYER_IMG_IDLE_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_idle_facing_left.png",
+                    frames: 20,
+                    framesX: 4,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_IDLE_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_idle_facing_right.png",
+                    frames: 20,
+                    framesX: 4,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_DIE_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_die_facing_left.png",
+                    frames: 5,
+                    framesX: 1,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_DIE_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_die_facing_right.png",
+                    frames: 5,
+                    framesX: 1,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_WALK_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_walk_facing_left.png",
+                    frames: 15,
+                    framesX: 3,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_WALK_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_walk_facing_right.png",
+                    frames: 15,
+                    framesX: 3,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_RUN_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_run_facing_left.png",
+                    frames: 15,
+                    framesX: 3,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_RUN_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_run_facing_right.png",
+                    frames: 15,
+                    framesX: 3,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_JUMP_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_jump_facing_left.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_JUMP_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_jump_facing_right.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_DEFEND_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_defend_facing_left.png",
+                    frames: 5,
+                    framesX: 1,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_DEFEND_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_defend_facing_right.png",
+                    frames: 5,
+                    framesX: 1,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_ATTACK_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_attack_1_facing_left.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_ATTACK_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_attack_1_facing_right.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_ATTACK1_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_attack_1_facing_left.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_ATTACK1_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_brown/brown_viking_girl_attack_1_facing_right.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                }
+            ]
+        },
+        {
+            type: SPRITE_PLAYER,
+            title: 'Red Viking Girl',
+            theFiles:[
+                {
+                    type: PLAYER_IMG_IDLE_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_idle_facing_left.png",
+                    frames: 20,
+                    framesX: 4,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_IDLE_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_idle_facing_right.png",
+                    frames: 20,
+                    framesX: 4,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_DIE_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_die_facing_left.png",
+                    frames: 5,
+                    framesX: 1,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_DIE_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_die_facing_right.png",
+                    frames: 5,
+                    framesX: 1,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_WALK_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_walk_facing_left.png",
+                    frames: 15,
+                    framesX: 3,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_WALK_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_walk_facing_right.png",
+                    frames: 15,
+                    framesX: 3,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_RUN_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_run_facing_left.png",
+                    frames: 15,
+                    framesX: 3,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_RUN_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_run_facing_right.png",
+                    frames: 15,
+                    framesX: 3,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_JUMP_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_jump_facing_left.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_JUMP_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_jump_facing_right.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_DEFEND_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_defend_facing_left.png",
+                    frames: 5,
+                    framesX: 1,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_DEFEND_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_defend_facing_right.png",
+                    frames: 5,
+                    framesX: 1,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_ATTACK_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_attack_1_facing_left.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_ATTACK_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_attack_1_facing_right.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_ATTACK1_LEFT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_attack_1_facing_left.png",
+                    frames: 10,
+                    framesX: 2,
+                    framesY: 5,
+                    spriteWidth: VIKING_GIRL_SPRITE_WIDTH,
+                    spriteHeight: VIKING_GIRL_SPRITE_HEIGHT,
+                    spriteXupd: VIKING_GIRL_SPRITE_X_UPD,
+                    spriteYupd: VIKING_GIRL_SPRITE_Y_UPD,
+                    spriteMultiplierX: VIKING_GIRL_SPRITE_MULTIPLIER,
+                    spriteMultiplierY: VIKING_GIRL_SPRITE_MULTIPLIER
+                },
+                {
+                    type: PLAYER_IMG_ATTACK1_RIGHT,
+                    theFile: PLAYER_IMG_PATH + "/viking_girl_red/red_viking_girl_attack_1_facing_right.png",
                     frames: 10,
                     framesX: 2,
                     framesY: 5,
@@ -610,195 +1031,195 @@ function loadImages(){
                 }
             ]
         },
-        {
-            type: SPRITE_PLAYER,
-            title: 'Knight',
-            theFiles:[
-                {
-                    type: PLAYER_IMG_IDLE_LEFT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_rest_left.png",
-                    frames: 8,
-                    framesX: 2,
-                    framesY: 4,
-                    spriteWidth: 521,
-                    spriteHeight: 581,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-
-                {
-                    type: PLAYER_IMG_IDLE_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_rest_right.png",
-                    frames: 8,
-                    framesX: 2,
-                    framesY: 4,
-                    spriteWidth: 521,
-                    spriteHeight: 581,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_DIE_LEFT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_die_left.png",
-                    frames: 16,
-                    framesX: 4,
-                    framesY: 4,
-                    spriteWidth: 848,
-                    spriteHeight: 659,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_DIE_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_die_right.png",
-                    frames: 16,
-                    framesX: 4,
-                    framesY: 4,
-                    spriteWidth: 848,
-                    spriteHeight: 659,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_WALK_LEFT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_walk_left.png",
-                    frames: 16,
-                    framesX: 4,
-                    framesY: 4,
-                    spriteWidth: 607,
-                    spriteHeight: 619,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_WALK_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_walk_right.png",
-                    frames: 16,
-                    framesX: 4,
-                    framesY: 4,
-                    spriteWidth: 607,
-                    spriteHeight: 619,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_RUN_LEFT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_run_left.png",
-                    frames: 16,
-                    framesX: 4,
-                    framesY: 4,
-                    spriteWidth: 689,
-                    spriteHeight: 592,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_RUN_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_run_right.png",
-                    frames: 16,
-                    framesX: 4,
-                    framesY: 4,
-                    spriteWidth: 689,
-                    spriteHeight: 592,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_JUMP_LEFT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_jump_left.png",
-                    frames: 16,
-                    framesX: 4,
-                    framesY: 4,
-                    spriteWidth: 547,
-                    spriteHeight: 703,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_JUMP_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_jump_right.png",
-                    frames: 16,
-                    framesX: 4,
-                    framesY: 4,
-                    spriteWidth: 547,
-                    spriteHeight: 703,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_DEFEND_LEFT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_slash_left.png",
-                    frames: 12,
-                    framesX: 3,
-                    framesY: 4,
-                    spriteWidth: 716,
-                    spriteHeight: 697,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_DEFEND_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_slash_right.png",
-                    frames: 12,
-                    framesX: 3,
-                    framesY: 4,
-                    spriteWidth: 716,
-                    spriteHeight: 697,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_ATTACK_LEFT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_slash_left.png",
-                    frames: 12,
-                    framesX: 3,
-                    framesY: 4,
-                    spriteWidth: 716,
-                    spriteHeight: 697,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                },
-                {
-                    type: PLAYER_IMG_ATTACK_RIGHT,
-                    theFile: PLAYER_IMG_PATH + "/knight/knight_slash_right.png",
-                    frames: 12,
-                    framesX: 3,
-                    framesY: 4,
-                    spriteWidth: 716,
-                    spriteHeight: 697,
-                    spriteXupd: KNIGHT_SPRITE_X_UPD,
-                    spriteYupd: KNIGHT_SPRITE_Y_UPD,
-                    spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
-                    spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
-                }
-            ]
-        },
+        // {
+        //     type: SPRITE_PLAYER,
+        //     title: 'Knight',
+        //     theFiles:[
+        //         {
+        //             type: PLAYER_IMG_IDLE_LEFT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_rest_left.png",
+        //             frames: 8,
+        //             framesX: 2,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 324.5,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //
+        //         {
+        //             type: PLAYER_IMG_IDLE_RIGHT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_rest_right.png",
+        //             frames: 8,
+        //             framesX: 2,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 413,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_DIE_LEFT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_die_left.png",
+        //             frames: 16,
+        //             framesX: 4,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 226.25,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_DIE_RIGHT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_die_right.png",
+        //             frames: 16,
+        //             framesX: 4,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 585,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_WALK_LEFT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_walk_left.png",
+        //             frames: 16,
+        //             framesX: 4,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 296.75,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_WALK_RIGHT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_walk_right.png",
+        //             frames: 16,
+        //             framesX: 4,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 324.5,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_RUN_LEFT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_run_left.png",
+        //             frames: 16,
+        //             framesX: 4,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 250,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_RUN_RIGHT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_run_right.png",
+        //             frames: 16,
+        //             framesX: 4,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 260,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_JUMP_LEFT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_jump_left.png",
+        //             frames: 16,
+        //             framesX: 4,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 374,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_JUMP_RIGHT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_jump_right.png",
+        //             frames: 16,
+        //             framesX: 4,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 343.5,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_DEFEND_LEFT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_slash_left.png",
+        //             frames: 12,
+        //             framesX: 3,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 283.333333333333333,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_DEFEND_RIGHT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_slash_right.png",
+        //             frames: 12,
+        //             framesX: 3,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 270.333333333333333,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_ATTACK_LEFT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_slash_left.png",
+        //             frames: 12,
+        //             framesX: 3,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 283.333333333333333,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         },
+        //         {
+        //             type: PLAYER_IMG_ATTACK_RIGHT,
+        //             theFile: PLAYER_IMG_PATH + "/knight/knight_slash_right.png",
+        //             frames: 12,
+        //             framesX: 3,
+        //             framesY: 4,
+        //             spriteWidth: KNIGHT_SPRITE_WIDTH,
+        //             spriteHeight: 270.333333333333333,
+        //             spriteXupd: KNIGHT_SPRITE_X_UPD,
+        //             spriteYupd: KNIGHT_SPRITE_Y_UPD,
+        //             spriteMultiplierX: KNIGHT_SPRITE_MULTIPLIER,
+        //             spriteMultiplierY: KNIGHT_SPRITE_MULTIPLIER
+        //         }
+        //     ]
+        // },
         {
             type: MENU_IMG,
             title: 'Menu',

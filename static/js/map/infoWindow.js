@@ -6,4 +6,5 @@ class mapInfoWindow{
     draw(options){
         
     }
+
 }

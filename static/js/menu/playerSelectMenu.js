@@ -91,8 +91,8 @@ class playerSelectMenuClass{
             height: correctSprite.spriteHeight, // height image
             canvasX: this._demoSpriteWidth, // x canvas
             canvasY: this._demoSpriteHeight, // y canvas
-            canvasWidth: correctSprite.spriteWidth/2, // width canvas
-            canvasHeight: correctSprite.spriteHeight/2 // height canvas
+            canvasWidth: correctSprite.spriteWidth, // width canvas
+            canvasHeight: correctSprite.spriteHeight // height canvas
         };
 
         if (this._selectedPlayerSprite == 2){
@@ -104,8 +104,8 @@ class playerSelectMenuClass{
                 height: correctSprite.spriteHeight, // height image
                 canvasX: this._demoSpriteWidth, // x canvas
                 canvasY: this._demoSpriteHeight, // y canvas
-                canvasWidth: correctSprite.spriteWidth*0.4, // width canvas
-                canvasHeight: correctSprite.spriteHeight*0.4// height canvas
+                canvasWidth: correctSprite.spriteWidth, // width canvas
+                canvasHeight: correctSprite.spriteHeight// height canvas
             };
         }
         gameEngine.drawImg(optionsDemoSprite);
